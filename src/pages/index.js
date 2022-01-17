@@ -36,9 +36,9 @@ export default function IndexPage() {
         </ul>
     </div>
     return (
-        <div className="min-h-screen max-h-screen py-20 px-4 flex flex-col justify-center relative overflow-hidden sm:py-40 bg-1E212D">
+        <div className="min-h-screen py-20 px-4 flex flex-col justify-center relative overflow-hidden bg-1E212D sm:py-[5vh] sm:max-h-screen">
             <div
-                className="min-h-md max-h-md overflow-y-auto relative px-6 pb-8 bg-FAF3E0 shadow-xl ring-1 ring-gray-900/5 rounded-lg sm:max-w-md sm:mx-auto sm:px-10">
+                className="mx-auto overflow-hidden overflow-y-auto relative px-6 pb-8 bg-FAF3E0 shadow-xl ring-1 ring-gray-900/5 rounded-lg sm:max-w-md sm:min-h-md sm:max-h-md sm:mx-auto sm:px-10">
                 <div className="max-w-md mx-auto">
                     <div className="p-10 sm:p-5">
                         <StaticImage src="../images/profile.png" alt="Profile" />
