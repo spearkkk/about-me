@@ -37,9 +37,6 @@ export default function IndexPage() {
     </div>
     return (
         <div className="min-h-screen max-h-screen py-20 px-4 flex flex-col justify-center relative overflow-hidden sm:py-40 bg-1E212D">
-            {/*<img src="/img/beams.jpg" alt=""*/}
-            {/*     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none" width="1308"/>*/}
-            {/*<div className="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>*/}
             <div
                 className="min-h-md max-h-md overflow-y-auto relative px-6 pb-8 bg-FAF3E0 shadow-xl ring-1 ring-gray-900/5 rounded-lg sm:max-w-md sm:mx-auto sm:px-10">
                 <div className="max-w-md mx-auto">
