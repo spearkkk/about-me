@@ -18,7 +18,7 @@ export default function IndexPage() {
 
     const intro = <div>
         <h1 className="font-black text-custom-bg"># Introduce</h1>
-        <div className="text-xs leading-relaxed text-5E8B7E whitespace-pre-line">
+        <div className="text-xs leading-relaxed text-5E8B7E whitespace-pre-line pt-1">
             {introContent()}
         </div>
     </div>
@@ -27,9 +27,9 @@ export default function IndexPage() {
         <h1 className="font-bold text-custom-bg">
             # Work Experiences
         </h1>
-        <ul className="list-disc text-sm text-5E8B7E pt-2">
+        <ul className="list-disc text-sm text-5E8B7E pt-1">
             <li>Display Advertising Platform - <span className="font-semibold">Coupang</span>
-                <div className="text-xs">(2019.12.~ )</div></li>
+                <div className="text-xs">(2020.01.~ )</div></li>
             <li>Advertising Channel - <span className="font-semibold">Coupang</span>
                 <div className="text-xs">(2017.03. ~ 2019.12.)</div></li>
         </ul>
@@ -39,7 +39,7 @@ export default function IndexPage() {
         <h1 className="font-bold text-custom-bg">
             # Skills
         </h1>
-        <ul className="list-disc text-xs text-5E8B7E pt-2">
+        <ul className="list-disc text-xs text-5E8B7E pt-1">
             <li>Spring Framework(boot), Apache Kafka, Apache Spark</li>
             <li>ARedis, MySQL, Eleasticsearch</li>
             <li>ReactJS</li>
@@ -51,7 +51,7 @@ export default function IndexPage() {
         <h1 className="font-bold text-custom-bg">
             # History
         </h1>
-        <ul className="list-disc text-xs text-5E8B7E pt-2">
+        <ul className="list-disc text-xs text-5E8B7E pt-1">
             <li>2017.01 ~ <br/>
                 Working for E-commerce Company(Growth Marketing Dept. in Coupang)
             </li>
