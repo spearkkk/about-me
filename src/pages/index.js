@@ -5,55 +5,53 @@ import {RiPencilLine} from "@react-icons/all-files/ri/RiPencilLine";
 import {RiAtLine} from "@react-icons/all-files/ri/RiAtLine";
 
 import {Link} from "gatsby";
+import {RiFilePdfLine} from "@react-icons/all-files/ri/RiFilePdfLine";
+
+import resume from '../../static/resume.pdf';
 
 export default function IndexPage() {
-    const intro = <div className="text-sm py-5 ">
-        <div className="italic">
-            <span className="font-black text-xl text-custom-bg">Back-end Engineer</span>
-            <br/>
-            <div className="pl-5 text-5E8B7E">
-                {new Date().getUTCFullYear() - 2017 + 1}th year,
-                <br/>
-                working in Republic of Korea,
-                <br/>
-                highly understanding advertising domain,
-            </div>
+    const introContent = () => "문제 해결을 좋아하는 개발자입니다. \n " +
+        "단편적인 문제 풀이도 좋아하지만, 비즈니스 또는 시스템 상황을 이해하고 이를 바탕으로 문제를 해결하는 것도 좋아합니다. \n" +
+        "개인적으로는 간단한 알고리즘 문제를 풀며 문제 해결을 습관화하고, \n" +
+        "업무에서는 문제 상황과 배경에 대해서 정리하고 이를 바탕으로 해결 방법을 제시해왔습니다. " +
+        "이 정리한 내용을 바탕으로 팀 구성원들과 소통하며 협업을 해왔습니다."
+
+    const intro = <div>
+        <h1 className="font-black text-custom-bg"># Introduce</h1>
+        <div className="text-xs leading-relaxed text-5E8B7E whitespace-pre-line">
+            {introContent()}
         </div>
     </div>
 
-    const ability = <div className="space-y-1.5">
-        <h3 className="font-bold text-lg text-custom-bg underline underline-offset-4">
-            Ability
-        </h3>
-        <ul className="list-disc text-sm space-y-1 m-0 text-5E8B7E">
-            <li>Can build back-office using <span className="font-semibold">React JS &amp; Spring Boot</span>
-            </li>
-            <li>Can architect &amp; build event driven data pipeline using <span
-                className="font-semibold">Kafka</span></li>
-            <li>Can do big data processing by <span className="font-semibold">Spark</span></li>
+    const workExperiences = <div className="pt-5">
+        <h1 className="font-bold text-custom-bg">
+            # Work Experiences
+        </h1>
+        <ul className="list-disc text-sm text-5E8B7E pt-2">
+            <li>Display Advertising Platform - <span className="font-semibold">Coupang</span>
+                <div className="text-xs">(2019.12.~ )</div></li>
+            <li>Advertising Channel - <span className="font-semibold">Coupang</span>
+                <div className="text-xs">(2017.03. ~ 2019.12.)</div></li>
         </ul>
     </div>
 
-    const experiences = <div className="space-y-1.5">
-        <h3 className="font-bold text-lg text-custom-bg underline underline-offset-4">
-            Experiences
-        </h3>
-        <ul className="list-disc text-sm space-y-1 m-0 text-5E8B7E">
-            <li><span className="font-semibold">Keyword Search Ads. Automation</span>: Bidding, Reporting</li>
-            <li><span className="font-semibold">Display Ads. Management</span>: Feed Generation, Reporting,
-                Audience Sync
-            </li>
-            <li><span className="font-semibold">Price Comparison Site Ads. Management</span>: Reporting,
-                Near-real time API &amp; Data pipeline
-            </li>
+    const Skills = <div className="pt-5">
+        <h1 className="font-bold text-custom-bg">
+            # Skills
+        </h1>
+        <ul className="list-disc text-xs text-5E8B7E pt-2">
+            <li>Spring Framework(boot), Apache Kafka, Apache Spark</li>
+            <li>ARedis, MySQL, Eleasticsearch</li>
+            <li>ReactJS</li>
+            <li>Java</li>
         </ul>
     </div>
 
-    const history = <div className="space-y-1.5">
-        <h3 className="font-bold text-lg text-custom-bg underline underline-offset-4">
-            History
-        </h3>
-        <ul className="list-disc text-sm space-y-1 m-0 text-5E8B7E">
+    const history = <div className="pt-5">
+        <h1 className="font-bold text-custom-bg">
+            # History
+        </h1>
+        <ul className="list-disc text-xs text-5E8B7E pt-2">
             <li>2017.01 ~ <br/>
                 Working for E-commerce Company(Growth Marketing Dept. in Coupang)
             </li>
@@ -72,13 +70,14 @@ export default function IndexPage() {
                         <StaticImage src="../images/profile.png" alt="Profile"/>
                     </div>
                     <div className="divide-y divide-reos-300/50">
-                        <div className="py-6 space-y-4 font-serif">
+                        <div className="py-6 space-y-4 font-serif divide-y">
                             {intro}
-                            {ability}
-                            {experiences}
+                            {workExperiences}
+                            {Skills}
                             {history}
                         </div>
                         <div className="pt-1 px-1 space-x-1.5 text-sm flex justify-end text-custom-bg">
+                            <a href={resume}><RiFilePdfLine/></a>
                             <Link to="https://github.com/spearkkk">
                                 <RiGithubLine/>
                             </Link>
