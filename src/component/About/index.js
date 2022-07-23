@@ -74,9 +74,6 @@ export default function About({introContent}) {
                             <Link to="https://github.com/spearkkk">
                                 <RiGithubLine/>
                             </Link>
-                            <Link to="https://spearkkk.dev">
-                                <RiPencilLine/>
-                            </Link>
                             <a href="mailto://spearkkp@gmail.com">
                                 <RiAtLine/>
                             </a>
